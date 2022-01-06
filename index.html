@@ -1,0 +1,67 @@
+<html>
+<head><title>Submit Page</title></head>
+<script type="text/javascript" src="finalassign.js">   
+</script> 
+<link rel="stylesheet" type="text/css" href="finalassign.css">
+<body>
+<!--this page contains the type of kerala food and can order the needed traditional items and contains payment details-->
+<h1><center>Make Your Order</center></h1>
+  <form class="center" id="myForm" >
+	First name:
+	<input type="text" name="firstname"  required><br>
+	<br>Last name:
+	<input type="text" name="lastname" required><br>
+	<br>Email:
+	<input type="email" name="email"><br>
+	<br>Ph.number:        
+	<input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}"><br>
+        <br><br><br><br>
+        <h2><em>Your Kerala Food Choices</em></h2>
+	Items:	
+	<select name="foods" id="foods">
+	  <option value="select">select</option>
+	  <option value="Puttu-Kadalacurry">Puttu-Kadalacurry</option>
+	  <option value="Appam-Stew">Appam-Stew</option>
+	  <option value="Idiyappam-Eggcurry">Idiyappam-Eggcurry</option>
+	  <option value="Dosa-Sambar">Dosa-Sambar</option>
+	  <option value="Sadhya">Sadhya</option>
+	  <option value="Biriyani">Biriyani</option>
+	  <option value="Spicy-chicken fry">Spicy-chicken fry</option>
+	  <option value="Beef fry-Parotta">Beef fry-Parotta</option>
+	  <option value="Prawn Theeyal">Prawn Theeyal</option>
+	  <option value="Cassava">Cassava</option>
+ 	  <option value="Mussel Stir Fry">Mussel Stir Fry</option>
+          <option value="Payasam">Payasam</option>
+	</select><br>
+	Do you need any Drinks:
+	<input type="radio" name="Drinks" value="YES">YES
+	<input type="radio" name="Drinks" value="NO">NO<br>
+	<br><br><br>
+	<h2 class="details">Delivery Details</h2>
+	<br><input type="radio" name="fooddelivery" value="pickup">Pick Up<br>
+	<input type="radio" id="checkyes" name="fooddelivery" value="Delivery" onclick="Hide()">Delivery<br>
+	       
+               <div id="delivery" style="display: none"> 
+	       Address:
+	       <input type="text" id="address" /><br>
+	       Area near:
+	       <input type="text" id="area">
+	       </div>
+	
+	<h2 id="details">Payment Details</h2>
+	<br><input type="radio" name="cash" value="cashondelivery">Cash On Delivary<br>
+	<input type="radio" id="chkYes" name="cash" value="Credit Card" onclick="ShowHideDiv()">Credit Card<br>
+	<input type="radio" name="cash" value="other">Other<br>
+	<div id="card" style="display: none">
+       Card Number:
+       <input type="text" id="txtcardNumber" />
+       CVV:
+       <input type="text" id="number">
+       Expiry Date:
+       <input type="date" id="date">
+       </div>
+       <input type="button" value="clickme" onclick="myFunction()">
+  </form>
+</body>
+</html>
+	
