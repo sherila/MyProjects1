@@ -1,0 +1,42 @@
+input[name=email]
+{
+ margin-left:20px;
+ padding:5px 100px;
+}
+input[type=text]
+{
+ margin-left:20px;
+ padding:5px 100px;
+}
+input[name=phone]
+{
+ margin-left:20px;
+ padding:5px 100px;
+}
+body
+{
+background-image:url(https://www.blueosa.com/wp-content/uploads/2020/01/the-best-top-10-indian-dishes.jpg);
+color:rgb(200,250,100);
+}
+.center
+{
+display:block;
+margin-left: auto;
+margin-right: auto;
+height:300px;
+width:300px;
+}
+center
+{
+color:red;
+}
+.details
+{
+font-style:italic;
+font-size:30px;
+}
+#details
+{
+font-style:bold;
+font-size:30px;
+}
